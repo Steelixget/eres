@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>INFINITESH</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header grid-block">
+			<div class="header__inner inner">
+				<div class="header__content">
+
+					<input type="submit" class="header__butt butt" name="about_butt" id="about_butt" value="О нас">
+					<input type="submit" class="header__butt butt" name="main_butt" id="main_butt" value="Главная">
+					<input type="submit" class="header__butt butt" name="gallery_butt" id="gallery_butt" value="Галерея">
+				</div>
+
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="section grid_main section_date24_06_2022">
+				<h2 class="section_header">24.06.2022</h2>
+				<div class="block_text grid_content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi obcaecati incidunt doloremque repellat
+						quisquam accusamus in asperiores placeat ab debitis voluptatibus voluptatum, natus quis dolorum rem
+						at! Minima, modi at impedit vel maxime, suscipit fugit assumenda architecto deleniti quos placeat
+						neque nesciunt iusto excepturi magnam dolore corporis sapiente laborum tempore sit soluta enim
+						laudantium adipisci. Quo sapiente a natus aliquam voluptates optio rem nulla illo cumque dicta! Autem
+						eveniet quo consectetur iste aspernatur possimus provident est vel, quia vero quas illum temporibus
+						optio unde! Dolores officia quasi eum ad. Incidunt cumque odio consectetur consequuntur dolores
+						consequatur officia praesentium exercitationem vel.</p>
+				</div>
+				<div class="frame grid_content">
+					<div class="frame_content" id="frame_content"></div>
+					<div class="control_panel ">
+						<div class="control_panel_content inner">
+							<input type="button" class="control_butt butt" name="paint_butt" id="paint_butt"
+								value="paint_line">
+							<input type="button" class="control_butt butt" name="figure_butt" id="figure_butt"
+								value="figure_paint">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section  section_database">
+				<div class="database_content grid_main">
+
+					<form action="php/connectBase.php" method="post" class="database grid_main table_create">
+						<input type="text" name="newtable_add" class="name_table">
+						<input type="submit" class="table_add butt" value="Создать новую таблицу">
+
+					</form>
+
+					<form action="php/connectBase.php" method="post" class="database grid_main table_delete">
+						<input type="text" name="table_del" class="name_table">
+						<input type="submit" class="table_del butt" value="Удалить таблицу">
+					</form>
+
+
+				</div>
+				<form action="php/connectBase.php" method="post" class="database_row  ">
+					<p class="p-4">Название таблицы</p>
+					<input type="text" name="table_name" class="t4">
+					<p class="p-1">Название поля</p>
+					<input type="text" name="name_create_rows" class="t1">
+					<p class="p-2">Тип</p>
+					<input type="text" name="type_create_rows" class="t2">
+					<p class="p-3">Размер</p>
+					<input type="text" name="size_create_rows" class="t3">
+					<input type="submit" class="tb_create_rows" value="добавить поля">
+				</form>
+
+				<form action="php/connectBase.php" method="post" class="database_row  ">
+					<p class="p-4">Название таблицы</p>
+					<input type="text" name="table_namedata" class="t4">
+					<p class="p-1">Имя</p>
+					<input type="text" name="first_name" class="t1">
+					<p class="p-2">Фамилия</p>
+					<input type="text" name="last_name" class="t2">
+					<p class="p-3">Электронный адрес</p>
+					<input type="text" name="email" class="t3">
+					<input type="submit" class="tb_create_rows" value="Добавить пользователя">
+				</form>
+			</section>
+		</main>
+
+
+		<footer class="footer grid-block">
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220624125707"></script>
+		<script src="js/script.js"></script>
+	</div>
+</body>
+
+</html>

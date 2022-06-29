@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Bahnschrift;
+  font-display: swap;
+  src: url("../fonts/Bahnschrift.woff2") format("woff2"), url("../fonts/Bahnschrift.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BriosoPro Italic;
+  font-display: swap;
+  src: url("../fonts/BriosoPro Italic.woff2") format("woff2"), url("../fonts/BriosoPro Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BOOKOS;
+  font-display: swap;
+  src: url("../fonts/BOOKOS.woff2") format("woff2"), url("../fonts/BOOKOS.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: BOOKOSB;
+  font-display: swap;
+  src: url("../fonts/BOOKOSB.woff2") format("woff2"), url("../fonts/BOOKOSB.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #181818;
+  max-width: 2300px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #101010;
+  margin-bottom: 60px;
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.butt {
+  margin: 5px 10px;
+  color: #FFF;
+  background-color: #3a393d;
+}
+
+.butt:hover {
+  cursor: pointer;
+}
+
+.grid_main {
+  display: -ms-grid;
+  display: grid;
+}
+
+.section_header {
+  text-align: center;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bold;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: section_header;
+}
+
+p {
+  color: #FFF;
+  font-size: 24px;
+}
+
+.header__butt {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 5px 25px;
+  padding: 5px 15px;
+  border-radius: 10px 10px;
+}
+
+.section_date24_06_2022 {
+      grid-template-areas: "section_header section_header" "block_text frame";
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.block_text {
+  /* border: 1px solid rgb(255, 255, 255); */
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: block_text;
+}
+
+.frame {
+  margin-left: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: frame;
+}
+
+.frame_content {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #101010;
+  width: 100%;
+  height: 500px;
+  background-color: #cecece;
+}
+
+.control_panel {
+  background-color: #101010;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.control_butt {
+  font-size: 20px;
+  margin: 10px 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/*dataBASE*/
+.database {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "name_table" "table_add ";
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.name_table {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name_table;
+}
+
+.table_add {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: table_add;
+}
+
+.database > * {
+  padding: 10px 20px;
+  margin: 5px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.database_content {
+      grid-template-areas: "table_create table_delete" "table_create_rows table_create_rows";
+  -ms-grid-columns: (300px)[2];
+      grid-template-columns: repeat(2, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table_create {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: table_create;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.table_delete {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: table_delete;
+}
+
+/**/
+.database_row {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "p-4 p-1 p-2 p-3" "t4 t1 t2 t3" "tb_create_rows tb_create_rows tb_create_rows tb_create_rows";
+  grid-gap: 10px;
+  -ms-grid-columns: (300px)[4];
+      grid-template-columns: repeat(4, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* border-right: 1px solid rgb(158, 22, 22); */
+}
+
+.database_row > * {
+  padding: 10px 20px;
+  margin: 5px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.t1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: t1;
+}
+
+.t2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: t2;
+}
+
+.t3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: t3;
+}
+
+.p-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: p-1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 1px solid #cc0303;
+}
+
+.p-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: p-2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 1px solid #cc0303;
+}
+
+.p-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: p-3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 1px solid #cc0303;
+}
+
+.p-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: p-4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 1px solid #cc0303;
+}
+
+.tb_create_rows {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: tb_create_rows;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: rgba(197, 2, 197, 0.2);
+}
+
+.active_Paint {
+  border: 1px solid #5f5;
+}
